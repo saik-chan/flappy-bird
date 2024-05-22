@@ -21,8 +21,8 @@ src: url('http://www.mediafont.com/storage/contents/3184/04B_19__.TTF'); / non-I
                             background: steelblue; 
                     }
                     #Birdy{
-            width: 10%;
-            padding-bottom: 7%;
+            width: 5%;
+            padding-bottom: 3.5%;
 
 
             background-image: url('http://flappybird.io/img/bird.png');
@@ -30,7 +30,7 @@ src: url('http://www.mediafont.com/storage/contents/3184/04B_19__.TTF'); / non-I
             background-size: 300%; 
 
                             position:absolute; 
-                            top: 50%;
+                            top: 10%;
                             left: 20%; 
             z-index: 150; 
                     }
@@ -46,8 +46,8 @@ src: url('http://www.mediafont.com/storage/contents/3184/04B_19__.TTF'); / non-I
         #PauseButton{
             position:absolute;
             /* Position button so it's not hugging the screen edge */
-            top: 2%; 
-            right: 1%;
+            top: 0.87%; 
+            right: 5%;
 
             width: 3%; /* Make the width scale with the canvas size */
             height: 0; /* Set an initial 0 height */
@@ -77,12 +77,12 @@ src: url('http://www.mediafont.com/storage/contents/3184/04B_19__.TTF'); / non-I
             top: 0; /* Hug the top of the screen */
             left: 100%; /* Start off the screen */
 
-            width: 5%; /* Arbitrary pipe percentage */
+            width: 7%; /* Arbitrary pipe percentage */
 
-            background: greenyellow;
+            background: rgb(207, 165, 241);
 
-            animation: PipeMovement 15s linear; /* Run the movement animation in 15 seconds linearly */
-            -webkit-animation: PipeMovement 15s linear; /* webkit prefix */
+            animation: PipeMovement 3s linear; /* Run the movement animation in 15 seconds linearly */
+            -webkit-animation: PipeMovement 7s linear; /* webkit prefix */
         }
 
         @keyframes PipeMovement{
@@ -121,7 +121,7 @@ src: url('http://www.mediafont.com/storage/contents/3184/04B_19__.TTF'); / non-I
 
             padding: 5px 0px 5px 12px; 
 
-            background: #ded895; 
+            background: #91d7f3; 
 
             border-radius: 4%; 
             border: 2px solid black; 
@@ -133,9 +133,9 @@ src: url('http://www.mediafont.com/storage/contents/3184/04B_19__.TTF'); / non-I
             font-family: flappybird; 
             font-size: 2vw; 
 
-            color:white;           
+            color:rgb(248, 243, 243);           
             text-shadow:
-                -2px -2px 0 #000,  
+                -2px -2px 0 #000000,  
                 2px -2px 0 #000,
                 -2px 2px 0 #000,
                 2px 2px 0 #000;
@@ -186,10 +186,10 @@ src: url('http://www.mediafont.com/storage/contents/3184/04B_19__.TTF'); / non-I
         <!-- Inline CSS -->
 
         <div id="InstructionBox" style="position: absolute; left: 50%; display:none;">
-            <div style="position: relative; left: -50%; z-index: 150; font-family:flappybird; color:white; font-size: 2vw;" class="noSelect">
-                Click to Fly <br>
-                Space Bar to Reset <br>
-                "P" to Pause
+            <div style="position: relative; left: -50%; z-index: 150; font-family:flappybird; color:rgb(15, 12, 12); font-size: 2vw;" class="noSelect">
+                click to Fly <br>
+                "s" to Reset <br>
+                "K" to Pause
             </div>
         </div>
 
@@ -201,15 +201,15 @@ src: url('http://www.mediafont.com/storage/contents/3184/04B_19__.TTF'); / non-I
 
         <div style="position: absolute; left: 50%; top: 50%;">
             <div id="LostScoreScreen" class="noSelect">
-                <span>Score</span>
+                <span>pontos</span>
                 <br>
                 <span id="FinalScore">0</span>
                 <br>
-                <span>Best</span>
+                <span>Melhor</span>
                 <br>
                 <span id="BestScore">0</span>
                 <br>
-                <button id="ResetButton" type="button" class="btn btn-warning">Reset</button>
+                <button id="ResetButton" type="button" class="btn btn-warning">novamente</button>
             </div>
         </div>
 
